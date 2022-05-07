@@ -42,7 +42,9 @@
     <button class="btn btn-nav left" 
     on:click={movePagesLeft}
     >
-      {"<"}
+      <svg xmlns="http://www.w3.org/2000/svg" class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
     </button>
     <div class="displayed-pages center">
       {#each displayedPages as page}
@@ -52,7 +54,9 @@
       {/each}
     </div>
     <button class="btn btn-nav right" on:click={movePagesRight}>
-      {">"}
+      <svg xmlns="http://www.w3.org/2000/svg" class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
     </button>
   </div>
 </main>
@@ -109,6 +113,7 @@
   .btn-nav:hover .chevron {
     stroke: #fff;
   }
+
   .page-btn,
   .page-btn.link,
   .page-btn.visited {
