@@ -9,7 +9,7 @@
 
   function update(newFrom, newTo) {
     from = newFrom, to = newTo
-    displayedPages = [...pages.slice(from, to)]
+    displayedPages = pages.slice(from, to)
   }
 
   function movePagesLeft() {
